@@ -57,7 +57,8 @@ import wizard.KtorClientOkhttp
 import wizard.KtorCore
 import wizard.LibresCompose
 import wizard.LibresPlugin
-import wizard.MokoMvvm
+import wizard.MokoMvvmCompose
+import wizard.MokoMvvmCore
 import wizard.MultiplatformSettings
 import wizard.Napier
 import wizard.ProjectInfo
@@ -166,7 +167,8 @@ val Content = FC<AppProps> { props ->
                         DependencyBox(listOf(Napier, Kermit), true),
                         DependencyBox(listOf(BuildConfigPlugin, BuildKonfigPlugin), true),
                         DependencyBox(KotlinxCoroutinesCore, true),
-                        DependencyBox(MokoMvvm, false),
+                        DependencyBox(MokoMvvmCompose, false),
+                        DependencyBox(MokoMvvmCore, false),
                         DependencyBox(KtorCore, false),
                         DependencyBox(
                             listOf(

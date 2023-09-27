@@ -114,7 +114,8 @@ class GeneratorTest {
                                 implementation(libs.composeIcons.featherIcons)
                                 implementation(libs.ktor.core)
                                 implementation(libs.kotlinx.coroutines.core)
-                                implementation(libs.moko.mvvm)
+                                implementation(libs.moko.mvvm.compose)
+                                implementation(libs.moko.mvvm.core)
                                 implementation(libs.kotlinx.serialization.json)
                             }
                         }
@@ -257,7 +258,8 @@ class GeneratorTest {
                 composeIcons = "${ComposeIconsFeather.version}"
                 ktor = "${KtorCore.version}"
                 kotlinx-coroutines = "${KotlinxCoroutinesCore.version}"
-                moko-mvvm = "${MokoMvvm.version}"
+                moko-mvvm-compose = "${MokoMvvmCompose.version}"
+                moko-mvvm-core = "${MokoMvvmCore.version}"
                 kotlinx-serialization = "${KotlinxSerializationJson.version}"
                 sqlDelight = "${SQLDelightPlugin.version}"
                 buildConfig = "${BuildConfigPlugin.version}"
@@ -283,7 +285,8 @@ class GeneratorTest {
                 ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
                 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
                 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
-                moko-mvvm = { module = "dev.icerock.moko:mvvm-compose", version.ref = "moko-mvvm" }
+                moko-mvvm-compose = { module = "dev.icerock.moko:mvvm-compose", version.ref = "moko-mvvm-compose" }
+                moko-mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "moko-mvvm-core" }
                 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
                 sqlDelight-driver-sqlite = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
                 sqlDelight-driver-android = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
